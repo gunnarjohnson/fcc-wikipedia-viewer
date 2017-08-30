@@ -1,0 +1,11 @@
+.input-form {
+
+  &__wikipedia {
+  	margin: 0 1em 0 1em;
+  	border: 0.05em solid #000000;
+  	border-radius: 0.5em;
+  	background-color: #FFFFFF;
+  	font-family: "Lato", serif;
+  	font-size: 1em;
+  }
+}

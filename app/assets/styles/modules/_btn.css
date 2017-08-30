@@ -1,0 +1,21 @@
+.btn {
+	width: 10em;
+	margin: 0 1em 0 1em;
+	padding: 1em;
+	border: 0.05em solid #000000;
+	border-radius: 0.5em;
+	outline: none;
+	background-color: #FFFFFF;
+	font-size: 1em;
+
+  &:hover {
+  	color: #FFFFFF;
+  	background-color: #400000;
+  	transition: ease-in-out, color 0.25s ease-in-out;
+  	transition: ease-in-out, background-color .25s ease-in-out;
+  }
+
+  &:focus {
+  	outline: none;
+  }
+}

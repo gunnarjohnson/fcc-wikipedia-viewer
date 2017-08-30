@@ -1,0 +1,16 @@
+body {
+	background-color: #bf0000;
+}
+
+input[type=text] {
+	width: 10em;
+	transition: all .5s ease-in-out;
+	text-align: center;
+}
+
+input[type=text]:focus {
+  width: 20em;
+	outline: none;
+	color: #FFFFFF;
+	background-color: #400000;
+}

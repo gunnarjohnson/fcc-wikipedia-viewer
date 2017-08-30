@@ -1,0 +1,19 @@
+.wikipedia-viewer {
+
+  &__title {
+  	display: flex;
+  	justify-content: center;
+  	width: 100%;
+  	color: #400000;
+  	font-family: "Lato", serif;
+  	font-size: 4em;
+  	font-weight: thin;
+  	font-variant: small-caps;
+  }
+
+  &__search {
+  	display: flex;
+  	justify-content: center;
+  	margin-bottom: 2.5%;
+  }
+}
