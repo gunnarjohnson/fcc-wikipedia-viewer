@@ -16,8 +16,10 @@
   </header>
   <section class="wikipedia-viewer__search">
     <input type="text" id="wikipedia-search__input" class="input-form__wikipedia" placeholder="ENTER TEXT HERE" autofocus>
-    <button id = "wikipedia-search__button" class="btn">Let's go!</button>
-    <button id="random-article__button" class="btn" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random','_blank','resizable=yes')">Surprise me!</button>
+    <div class="btn--box">
+      <button id ="wikipedia-search__button" class="btn btn--left">Let's go!</button>
+      <button id="random-article__button" class="btn btn--right" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random','_blank','resizable=yes')">Surprise me!</button>
+    </div>
   </section>
 	<div id="wikipedia-viewer__results"></div>
 </body>

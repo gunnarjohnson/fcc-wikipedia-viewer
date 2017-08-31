@@ -1,16 +1,39 @@
 body {
-	background-color: #bf0000;
+	background-color: $colorLightRed;
+}
+
+h2 {
+	margin: 5% 2.5% 0 2.5%;
+	font-size: 0.5em;
+	text-align: center;
+
+	@mixin atVerySmall {
+		font-size: 1em;
+	}
+
+	@mixin atSmall {
+		margin: 4% 2.5% 0 2.5%;
+	}
+
+	@mixin atMedium {
+		margin: 2.5% 2.5% 0 2.5%;
+		font-size: 1.5em;
+	}
 }
 
 input[type=text] {
-	width: 10em;
-	transition: all .5s ease-in-out;
+	width: 9.875em;
+	transition: width .5s ease-in-out;
 	text-align: center;
-}
+	max-width: 95%;
 
-input[type=text]:focus {
-  width: 20em;
-	outline: none;
-	color: #FFFFFF;
-	background-color: #400000;
+	@mixin atMedium {
+		max-width: 100%;
+	}
+	&:focus {
+	  width: 19.75em;
+		outline: none;
+		color: #FFFFFF;
+		background-color: $colorDarkRed;
+	}
 }

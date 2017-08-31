@@ -1,6 +1,8 @@
 .btn {
+	height: 3.25em;
 	width: 10em;
-	margin: 0 1em 0 1em;
+	max-width: 100%;
+	margin: 1em 0;
 	padding: 1em;
 	border: 0.05em solid #000000;
 	border-radius: 0.5em;
@@ -8,9 +10,17 @@
 	background-color: #FFFFFF;
 	font-size: 1em;
 
+	@mixin atSmall {
+		width: 9.5em;
+	}
+
+	@mixin atMedium {
+		width: 10em;
+	}
+
   &:hover {
   	color: #FFFFFF;
-  	background-color: #400000;
+  	background-color: $colorDarkRed;
   	transition: ease-in-out, color 0.25s ease-in-out;
   	transition: ease-in-out, background-color .25s ease-in-out;
   }
@@ -18,4 +28,39 @@
   &:focus {
   	outline: none;
   }
+
+	&--box {
+		display: flex;
+		flex-direction: column;
+
+		@mixin atSmall {
+			flex-direction: row;
+		}
+
+		@mixin atMedium {
+			flex-direction: row;
+		}
+	}
+
+	&--left {
+
+		@mixin atSmall {
+			margin-right: 0.5em;
+		}
+
+		@mixin atMedium {
+			margin: 0 1em;
+		}
+	}
+
+	&--right {
+
+		@mixin atSmall {
+			margin-left: 0.5em;
+		}
+
+		@mixin atMedium {
+			margin: 0 1em;
+		}
+	}
 }

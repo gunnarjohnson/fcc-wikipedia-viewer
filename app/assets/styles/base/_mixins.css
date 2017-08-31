@@ -1,0 +1,31 @@
+@define-mixin atVerySmall {
+  @media (min-width: 320px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atSmall {
+  @media (min-width: 485px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMedium {
+  @media (min-width: 800px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atLarge {
+  @media (min-width: 1280px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin clearfix {
+  &::after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}

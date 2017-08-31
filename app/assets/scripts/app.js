@@ -25,6 +25,7 @@ function searchWikipedia() {
     div.className = "wikipedia-search__results";
 		// Displays error message
     div.innerHTML = "<h2>INVALID ENTRY</h2><p>Please try again.</p>";
+		$(div).hide().fadeIn(500);
 	}
 	// Executes if form input is entered (and valid)
 	else {
@@ -46,6 +47,7 @@ function searchWikipedia() {
 					var title = data.query.pages[i].title;
 					var extract = data.query.pages[i].extract;
 					div.innerHTML = "<h2>" + title + "</h2><p>" + extract + "</p>";
+					$(div).hide().fadeIn(500);
 					// Function executes when a div is clicked, opening relevant link
 					let pageIdNumber = data.query.pages[i].pageid;
 					div.id = "wikipedia-search__results--" + i;
