@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato:bold,regular'>
+  <title>Wikipedia Viewer</title>
+
+  <link rel="stylesheet" href="assets/styles/styles.css">
+
+</head>
+
+<body>
+  <header class = "wikipedia-viewer__title">
+    <h2>Wikipedia Viewer</h2>
+  </header>
+  <section class="wikipedia-viewer__search">
+    <input type="text" id="wikipedia-search__input" class="input-form__wikipedia" placeholder="ENTER TEXT HERE" autofocus>
+    <div class="btn--box">
+      <button id ="wikipedia-search__button" class="btn btn--left">Let's go!</button>
+      <button id="random-article__button" class="btn btn--right" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random','_blank','resizable=yes')">Surprise me!</button>
+    </div>
+  </section>
+	<div id="wikipedia-viewer__results"></div>
+</body>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+<script src="assets/scripts/app.js"></script>
+
+</html>
